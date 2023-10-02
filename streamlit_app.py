@@ -39,5 +39,5 @@ streamlit.dataframe(my_data_row1)
 streamlit.header('Fruityvice Fruit Advice')
 fruit_choice1 = streamlit.text_input("What fruit you would like to add?","jackfruit")#"Kiwi default input
 streamlit.write('Thanks for adding ', fruit_choice1)
-my_cur.execute("insert into fruit_load_list values(fruit_choice1))
+my_cur.execute("insert into fruit_load_list values('{}')".format(fruitchoice1))
 
