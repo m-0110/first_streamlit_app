@@ -28,5 +28,6 @@ streamlit.text("Hello from Snowflake:")
 streamlit.text(my_data_row)
 #normalize json
 fruityvice_normalized=pandas.json_normalize(fruityvice_response.json())
+#make sure this streamlit.dataframe is at end
 streamlit.dataframe(fruityvice_normalized)
 
